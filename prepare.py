@@ -34,7 +34,7 @@ class data_preparation():
       Dataframe to prepare by
 
   - symptoms_per_patient : list
-       List of possible features from training_data_ref
+       List of possible symptoms from training_data_ref "symptoms" feature
 
   -------
   Protected Methods
@@ -156,10 +156,3 @@ class data_preparation():
 def preprare_data(training_data, new_data):
   data_prep = data_preparation(training_data, new_data)
   return data_prep.prepare()
-
-
-if __name__ == '__main__':
-  dataset = pd.read_csv("virus_data.csv")
-  df = preprare_data(dataset, dataset)
-  print(df.head())
-  
