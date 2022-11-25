@@ -162,3 +162,4 @@ if __name__ == '__main__':
   dataset = pd.read_csv("virus_data.csv")
   df = preprare_data(dataset, dataset)
   print(df.head())
+  
